@@ -1,0 +1,26 @@
+<div *ngIf="openSearcher">
+  <app-country-searcher (countrySelected)="onCountrySelected($event)"></app-country-searcher>
+</div>
+
+<div class="game-board">
+  <div class="corner"></div>
+
+  <div (click)=handleCellClick(0,1) class="top-label">{{ topPrompts[0] }}</div>
+  <div (click)=handleCellClick(0,2) class="top-label">{{ topPrompts[1] }}</div>
+  <div (click)=handleCellClick(0,3) class="top-label">{{ topPrompts[2] }}</div>
+
+  <div (click)=handleCellClick(1,0) class="side-label">{{ sidePrompts[0] }}</div>
+  <div (click)=handleCellClick(1,1) class="box">{{ board[0][0] || '201px x 201px' }}</div>
+  <div (click)=handleCellClick(1,2) class="box">{{ board[0][1] || '201px x 201px' }}</div>
+  <div (click)=handleCellClick(1,3) class="box">{{ board[0][2] || '201px x 201px' }}</div>
+
+  <div (click)=handleCellClick(2,0) class="side-label">{{ sidePrompts[1] }}</div>
+  <div (click)=handleCellClick(2,1) class="box">{{ board[1][0] || '202px x 201px' }}</div>
+  <div (click)=handleCellClick(2,2) class="box">{{ board[1][1] || '202px x 201px' }}</div>
+  <div (click)=handleCellClick(2,3) class="box">{{ board[1][2] || '202px x 201px' }}</div>
+
+  <div (click)=handleCellClick(3,0) class="side-label">{{ sidePrompts[2] }}</div>
+  <div (click)=handleCellClick(3,1) class="box">{{ board[2][0] || '202px x 201px' }}</div>
+  <div (click)=handleCellClick(3,2) class="box">{{ board[2][1] || '202px x 201px' }}</div>
+  <div (click)=handleCellClick(3,3) class="box">{{ board[2][2] || '202px x 201px' }}</div>
+</div>

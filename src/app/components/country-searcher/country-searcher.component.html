@@ -1,0 +1,21 @@
+<div class="search-container">
+  <input
+    type="text"
+    placeholder="Search for a country..."
+    [(ngModel)]="searchTerm"
+    (ngModelChange)="handleSearch()"
+    class="search-input"
+  />
+
+  <div *ngIf="searchResults.length" class="results">
+    <ul>
+      <li
+        *ngFor="let country of searchResults"
+        (click)="selectCountry(country)"
+        class="result-item"
+      >
+        {{ country.name }}
+      </li>
+    </ul>
+  </div>
+</div>
