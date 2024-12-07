@@ -5,49 +5,53 @@
 }
 
 .corner {
-  background: #444;
-  border: 1px solid #555;
+  background: #353548;
+  border: 2px solid #353548;
+  border-radius: 10px;
 }
 
 .top-label {
-  background: #444;
-  border: 1px solid #555;
+  background: #4a4a5b;
+  border: 2px solid #353548;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #AAA;
+  border-radius: 10px;
 }
 
 .top-label:hover {
-  background: #ffffff;
+  background: #5D5D6D;
   cursor: pointer;
 }
 
 .side-label {
-  background: #444;
-  border: 1px solid #555;
+  background: #4a4a5b;
+  border: 2px solid #353548;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #AAA;
+  border-radius: 10px;
 }
 
 .side-label:hover {
-  background: #ffffff;
+  background: #5D5D6D;
   cursor: pointer;
 }
 
 .box {
-  background: #444;
-  border: 1px solid #555;
+  background: #2a2a3a;
+  border: 2px solid #353548;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #AAA;
   transition: background 0.3s ease;
+  border-radius: 10px;
 }
 
 .box:hover {
-  background: #ffffff;
+  background: #9A9AA4;
   cursor: pointer;
 }

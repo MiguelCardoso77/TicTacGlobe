@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {TicTacToeComponent} from './components/tic-tac-toe/tic-tac-toe.component';
+import { GameComponent } from './pages/game/game.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TicTacToeComponent],
+  imports: [GameComponent],
   templateUrl: './app.component.html',
   standalone: true,
   styleUrl: './app.component.css'
