@@ -1,0 +1,7 @@
+<div class="content" *ngIf="countryName && flagUrl; else noCountry">
+  <img [src]="flagUrl" alt="{{ countryName }}" class="flag" />
+  <p class="country-name">{{ countryName }}</p>
+</div>
+<ng-template #noCountry>
+  <p></p>
+</ng-template>

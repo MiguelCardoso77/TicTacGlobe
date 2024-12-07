@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
-import { NgForOf, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { CountrySearcherComponent } from '../country-searcher/country-searcher.component';
 import { promptData } from '../../data/promptData';
 import { GameStarter } from '../game-starter/game-starter';
+import { CountryBoxComponent } from '../country-box/country-box.component';
 
 @Component({
   standalone: true,
   selector: 'app-tic-tac-toe',
   imports: [
-    NgForOf,
     NgIf,
-    CountrySearcherComponent
+    CountrySearcherComponent,
+    CountryBoxComponent
   ],
   templateUrl: './tic-tac-toe.component.html',
   styleUrl: './tic-tac-toe.component.css',

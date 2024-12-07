@@ -1,5 +1,5 @@
 export const countries = [
-  { id: '1', name: 'Afghanistan' },
+  { id: '1', name: 'Afghanistan', flagUrl: 'https://www.cia.gov/the-world-factbook/static/2b3a06ae2c0b517dbfe6629f1f967718/1be8f/AF-flag.webp' },
   { id: '2', name: 'Albania' },
   { id: '3', name: 'Algeria' },
   { id: '4', name: 'American Samoa' },
