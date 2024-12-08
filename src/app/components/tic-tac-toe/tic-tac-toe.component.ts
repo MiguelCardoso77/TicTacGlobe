@@ -38,7 +38,6 @@ export class TicTacToeComponent {
       return;
     }
 
-    console.log(`Cell clicked: ${row}, ${col}`);
     this.selectedCell = { row: row - 1, col: col - 1 };
     this.openSearcher = true;
   }
@@ -53,7 +52,7 @@ export class TicTacToeComponent {
 
       if (isValid) {
         console.log(`Country "${country.name}" is a valid answer!`);
-        this.board[row][col] = country.name;
+        this.board[row][col] = country.id;
       } else {
         console.log(`Country "${country.name}" is not valid for the selected prompts.`);
       }

@@ -24,7 +24,6 @@ export class CountryBoxComponent implements OnChanges {
   }
 
   findCountryById(): void {
-    this.countryId = '1';
     const country = countries.find(country => country.id === this.countryId);
     if (country) {
       console.log(`Country found: ${country.name}`);
