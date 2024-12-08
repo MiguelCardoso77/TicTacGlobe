@@ -132,15 +132,26 @@ export const prompts = {
   underXC02Emissions: 'Under X CO2 emissions',
   top10InNumberOfLakes: 'Top 10 in number of lakes',
 
-  // Sports
-  overXOlympicMedals: 'Over X Olympic medals',
-  underXOlympicMedals: 'Under X Olympic medals',
+  // -------------------------------------------------------------------------------------------------------------------
+  // ---------------------------------------------------Sports----------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
+  over500OlympicMedals: 'Over 500 Olympic medals',
+  over300OlympicMedals: 'Over 300 Olympic medals',
+  over100OlympicMedals: 'Over 100 Olympic medals',
+
   hasNeverWonAnOlympicMedal: 'Has never won an Olympic medal',
   hasHostedTheOlympics: 'Has hosted the Olympics',
+
+  hasAthleteInAllTimeTop10: 'Has an athlete in the all-time top 10',
+
   hasHostedMensFIFAWorldCup: 'Has hosted the Men\'s FIFA World Cup',
   hasPlayedMensFIFAWorldCup: 'Has played in the Men\'s FIFA World Cup',
   hasWonMensFIFAWorldCup: 'Has won the Men\'s FIFA World Cup',
+
   hasHostedFormula1GrandPrix: 'Has hosted a Formula 1 Grand Prix',
+  // -------------------------------------------------------------------------------------------------------------------
+  // ---------------------------------------------------Sports----------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
 
   // Political
   memberOfEuropeanUnion: 'Member of the European Union',

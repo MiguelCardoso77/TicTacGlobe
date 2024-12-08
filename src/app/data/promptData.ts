@@ -206,18 +206,33 @@ export const promptData: { [key: string]: string[] } = {
   top10InNumberOfLakes: ['Canada', 'Russia', 'Finland', 'United States of America', 'China', 'Sweden', 'Brazil', 'Norway',
   'Argentina', 'Kazakhstan'],
 
-  // Sports
+  // -------------------------------------------------------------------------------------------------------------------
+  // ---------------------------------------------------Sports----------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
+  over500OlympicMedals: ['United States of America', 'Russia', 'United Kingdom', 'Germany', 'France', 'Italy', 'China',
+  'Sweden', 'Australia', 'Japan', 'Canada', 'Norway', 'Hungary', 'Netherlands'],
+  over300OlympicMedals: ['United States of America', 'Russia', 'United Kingdom', 'Germany', 'France', 'Italy', 'China',
+  'Sweden', 'Australia', 'Japan', 'Canada', 'Norway', 'Hungary', 'Netherlands', 'Finland', 'South Korea', 'Switzerland',
+  'Austria', 'Poland', 'Romania'],
+  over100OlympicMedals: ['United States of America', 'Russia', 'United Kingdom', 'Germany', 'France', 'Italy', 'China',
+  'Sweden', 'Australia', 'Japan', 'Canada', 'Norway', 'Hungary', 'Netherlands', 'Finland', 'South Korea', 'Switzerland',
+  'Austria', 'Poland', 'Romania', 'Cuba', 'Bulgaria', 'Denmark', 'Spain', 'Belgium', 'Brazil', 'Czech Republic', 'New Zealand',
+  'Ukraine', 'Greece', 'Kenya', 'Turkey', 'Belarus'],
+
   hasNeverWonAnOlympicMedal: ['American Samoa', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Aruba', 'Bangladesh', 'Belize',
   'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'British Virgin Islands', 'Brunei', 'Cambodia', 'Cayman Islands',
   'Central African Republic', 'Chad', 'Comoros', 'Republic of the Congo', 'Democratic Republic of the Congo', 'Cook Islands',
   'El Salvador', 'Eswatini', 'Equatorial Guinea', 'Gambia', 'Guam', 'Guinea', 'Guinea-Bissau', 'Honduras', 'Kiribati', 'Laos',
   'Lesotho', 'Liberia', 'Libya', 'Madagascar', 'Malawi', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania',
   'Federated States of Micronesia', 'Monaco', 'Myanmar', 'Nauru', 'Nepal', 'Nicaragua', 'Oman', 'Palau', 'Palestine',
-  'Papua New Guinea', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Vincent and the Grenadines', 'São Tomé and Príncipe',
+  'Papua New Guinea', 'Rwanda', 'Saint Helena, Ascension and Tristan da Cunha', 'Saint Kitts and Nevis', 'Saint Vincent and the Grenadines', 'São Tomé and Príncipe',
   'Seychelles', 'Sierra Leone', 'Solomon Islands', 'Somalia', 'South Sudan', 'Timor-Leste', 'Tuvalu', 'Vanuatu', 'Yemen'],
   hasHostedTheOlympics: ['Australia', 'Sweden', 'Austria', 'Belgium', 'Brazil', 'Canada', 'China', 'Finland', 'France',
   'Germany', 'Greece', 'Italy', 'Japan', 'Mexico', 'Netherlands', 'Norway', 'Russia', 'South Korea', 'Spain', 'Switzerland',
   'United Kingdom', 'United States of America'],
+
+  hasAthleteInAllTimeTop10: ['United States of America', 'Portugal', 'Argentina', 'Jamaica', 'Switzerland'],
+
   hasHostedMensFIFAWorldCup: ['Uruguay', 'Italy', 'France', 'Brazil', 'Switzerland', 'Sweden', 'Chile', 'United Kingdom', 'Mexico',
   'Germany', 'Argentina', 'Spain', 'United States of America', 'Japan', 'South Korea', 'South Africa', 'Russia', 'Qatar'],
   hasPlayedMensFIFAWorldCup: ['United Kingdom', 'Brazil', 'Germany', 'Argentina', 'Italy', 'Mexico', 'France', 'Spain',
@@ -229,10 +244,14 @@ export const promptData: { [key: string]: string[] } = {
   'Slovakia', 'Cuba', 'Bosnia and Herzegovina', 'Jamaica', 'Angola', 'Israel', 'Iceland', 'Kuwait', 'Trinidad and Tobago',
   'Iraq', 'Togo', 'Qatar', 'Indonesia', 'Panama', 'United Arab Emirates', 'China', 'Haiti', 'Democratic Republic of the Congo'],
   hasWonMensFIFAWorldCup: ['Brazil', 'Germany', 'Italy', 'Argentina', 'France', 'Uruguay', 'United Kingdom', 'Spain'],
+
   hasHostedFormula1GrandPrix: ['Argentina', 'Australia', 'Austria', 'Azerbaijan', 'Bahrain', 'Belgium', 'Brazil', 'Canada',
   'China', 'France', 'Germany', 'Hungary', 'India', 'Italy', 'Japan', 'Malaysia', 'Mexico', 'Monaco', 'Netherlands',
   'Portugal', 'Qatar', 'Russia', 'Saudi Arabia', 'Singapore', 'South Africa', 'South Korea', 'Spain', 'Sweden', 'Switzerland',
   'Turkey', 'United Arab Emirates', 'United Kingdom', 'United States of America'],
+  // -------------------------------------------------------------------------------------------------------------------
+  // ---------------------------------------------------Sports----------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
 
   // Political
   memberOfEuropeanUnion: ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Estonia',
