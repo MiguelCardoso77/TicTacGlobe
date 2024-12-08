@@ -4,6 +4,7 @@ import { CountrySearcherComponent } from '../country-searcher/country-searcher.c
 import { promptData } from '../../data/promptData';
 import { GameStarter } from '../game-starter/game-starter';
 import { CountryBoxComponent } from '../country-box/country-box.component';
+import {FirebaseCommsService} from '../../services/firebase-comms.service';
 
 @Component({
   standalone: true,
@@ -25,7 +26,7 @@ export class TicTacToeComponent {
   openSearcher: boolean = false;
   selectedCell: { row: number; col: number } | null = null;
 
-  constructor(private starter: GameStarter) {
+  constructor(private starter: GameStarter, private firebaseCommsService: FirebaseCommsService) {
     const game = this.starter.resetGame();
     this.topPrompts = game.topPrompts;
     this.sidePrompts = game.sidePrompts;
@@ -37,6 +38,8 @@ export class TicTacToeComponent {
       console.log('Invalid move');
       return;
     }
+
+    this.firebaseCommsService.logCountries();
 
     this.selectedCell = { row: row - 1, col: col - 1 };
     this.openSearcher = true;

@@ -14,7 +14,14 @@ export const prompts = {
   coastlineLength: 'Coastline length',
   coastlineOnX: 'Coastline on X',
   xRiverRunsThrough: 'X River runs through',
-  inXContinent: 'In X continent',
+
+  inNorthAmerica: 'In North America',
+  inSouthAmerica: 'In South America',
+  inEurope: 'In Europe',
+  inAfrica: 'In Africa',
+  inAsia: 'In Asia',
+  inOceania: 'In Oceania',
+
   touchesEurasianSteppe: 'Touches the Eurasian Steppe',
   touchesEquator: 'Touches the Equator',
   touchesSaharaDesert: 'Touches the Sahara Desert',
