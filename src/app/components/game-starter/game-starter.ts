@@ -1,7 +1,7 @@
 import { prompts } from '../../data/prompts';
 
 export class GameStarter {
-  private readonly allPrompts = Object.values(prompts);
+  private readonly allPrompts = Object.keys(prompts);
 
   private getRandomPrompts(count: number, exclude: string[] = []): string[] {
     const availablePrompts = this.allPrompts.filter(prompt => !exclude.includes(prompt));

@@ -46,10 +46,16 @@ export class TicTacToeComponent {
   onCountrySelected(country: { id: string; name: string }): void {
     if (this.selectedCell) {
       const { row, col } = this.selectedCell;
+      const topPromptKey = this.topPrompts[col];
+      const sidePromptKey = this.sidePrompts[row];
 
-      if (promptData[this.topPrompts[col]].includes(country.name) && promptData[this.sidePrompts[row]].includes(country.name)) {
-        console.log(`Country "${country.name}" is a valid answer!"`);
+      const isValid = promptData[topPromptKey]?.includes(country.name) && promptData[sidePromptKey]?.includes(country.name);
+
+      if (isValid) {
+        console.log(`Country "${country.name}" is a valid answer!`);
         this.board[row][col] = country.name;
+      } else {
+        console.log(`Country "${country.name}" is not valid for the selected prompts.`);
       }
 
       this.openSearcher = false;
