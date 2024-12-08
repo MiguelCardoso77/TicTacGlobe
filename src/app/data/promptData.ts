@@ -23,17 +23,61 @@ export const promptData: { [key: string]: string[] } = {
   touchesSaharaDesert: ['Algeria', 'Chad', 'Egypt', 'Libya', 'Mali', 'Mauritania', 'Niger', 'Western Sahara', 'Sudan',
   'Morocco', 'Tunisia'],
 
-  // Economic
+  // -------------------------------------------------------------------------------------------------------------------
+  // --------------------------------------------------Economic---------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
+  humanDevelopmentIndexOver95: ['Switzerland', 'Norway', 'Iceland','Hong Kong', 'Denmark', 'Sweden', 'Germany',
+  'Ireland', 'Singapore', 'Australia', 'Netherlands'],
+  humanDevelopmentIndexOver90: ['Switzerland', 'Norway', 'Iceland','Hong Kong', 'Denmark', 'Sweden', 'Germany',
+  'Ireland', 'Singapore', 'Australia', 'Netherlands', 'Belgium', 'Finland', 'Liechtenstein', 'New Zealand', 'United Kingdom',
+  'United Arab Emirates', 'Canada', 'South Korea', 'United States of America', 'Luxembourg', 'Austria', 'Slovenia', 'Japan',
+  'Israel', 'Malta', 'Spain', 'France', 'Cyprus', 'Italy', 'Estonia', 'Czech Republic'],
+
+  humanDevelopmentIndexUnder45: ['Burkina Faso', 'Yemen', 'Burundi', 'Mali', 'Chad', 'Niger', 'Central African Republic',
+  'South Sudan', 'Somalia'],
+  humanDevelopmentIndexUnder40: ['Chad', 'Niger', 'Central African Republic', 'South Sudan', 'Somalia'],
+
+  gdpPerCapitaOver90K: ['Luxembourg', 'Singapore', 'Monaco', 'Ireland', 'Qatar', 'Macau', 'Bermuda', 'Norway'],
+  gdpPerCapitaOver75K: ['Luxembourg', 'Singapore', 'Monaco', 'Ireland', 'Qatar', 'Macau', 'Bermuda', 'Norway', 'Isle of Man',
+  'Switzerland', 'Cayman Islands', 'Brunei', 'United Arab Emirates'],
+  gdpPerCapitaOver65K: ['Luxembourg', 'Singapore', 'Monaco', 'Ireland', 'Qatar', 'Macau', 'Bermuda', 'Norway', 'Isle of Man',
+  'Switzerland', 'Cayman Islands', 'Brunei', 'United Arab Emirates', 'United States of America', 'Denmark', 'Faroe Islands',
+  'Falkland Islands', 'Netherlands', 'Greenland', 'Iceland', 'San Marino'],
+
+  gdpPerCapitaUnder7K: ['Ivory Coast', 'Marshall Islands', 'Ghana', 'Tonga', 'Honduras', 'Djibouti', 'Kyrgyzstan', 'Mauritania',
+  'Republic of the Congo', 'Tokelau', 'Samoa', 'Kenya', 'Nigeria', 'Pakistan', 'São Tomé and Príncipe', 'Tuvalu', 'Cambodia',
+  'Cameroon', 'Nepal', 'Tajikistan', 'Timor-Leste', 'Senegal', 'Papua New Guinea', 'Guinea', 'Benin', 'Federal States of Micronesia',
+  'Zambia', 'Tanzania', 'Zimbabwe', 'Comoros', 'Kiribati', 'Vanuatu', 'Rwanda', 'Haiti', 'Gambia', 'Syria', 'Ethiopia', 'Sudan',
+  'Uganda', 'Togo', 'Solomon Islands', 'Lesotho', 'Yemen', 'Burkina Faso', 'Mali', 'Guinea-Bissau', 'Afghanistan', 'Chad',
+  'Malawi', 'North Korea', 'Madagascar', 'Sierra Leone', 'Liberia', 'South Sudan', 'Eritrea', 'Niger', 'Mozambique',
+  'Democratic Republic of the Congo', 'Somalia', 'Central African Republic', 'Burundi'],
+  gdpPerCapitaUnder5K: ['Cameroon', 'Nepal', 'Tajikistan', 'Timor-Leste', 'Senegal', 'Papua New Guinea', 'Guinea', 'Benin', 'Federal States of Micronesia',
+  'Zambia', 'Tanzania', 'Zimbabwe', 'Comoros', 'Kiribati', 'Vanuatu', 'Rwanda', 'Haiti', 'Gambia', 'Syria', 'Ethiopia', 'Sudan',
+  'Uganda', 'Togo', 'Solomon Islands', 'Lesotho', 'Yemen', 'Burkina Faso', 'Mali', 'Guinea-Bissau', 'Afghanistan', 'Chad',
+  'Malawi', 'North Korea', 'Madagascar', 'Sierra Leone', 'Liberia', 'South Sudan', 'Eritrea', 'Niger', 'Mozambique',
+  'Democratic Republic of the Congo', 'Somalia', 'Central African Republic', 'Burundi'],
+  gdpPerCapitaUnder3K: ['Vanuatu', 'Rwanda', 'Haiti', 'Gambia', 'Syria', 'Ethiopia', 'Sudan',
+  'Uganda', 'Togo', 'Solomon Islands', 'Lesotho', 'Yemen', 'Burkina Faso', 'Mali', 'Guinea-Bissau', 'Afghanistan', 'Chad',
+  'Malawi', 'North Korea', 'Madagascar', 'Sierra Leone', 'Liberia', 'South Sudan', 'Eritrea', 'Niger', 'Mozambique',
+  'Democratic Republic of the Congo', 'Somalia', 'Central African Republic', 'Burundi'],
+
   producesNuclearPower: ['Argentina', 'Armenia', 'Bangladesh', 'Belarus', 'Belgium', 'Brazil', 'Bulgaria', 'Canada', 'China',
   'Czech Republic', 'Egypt', 'Finland', 'France', 'Hungary', 'India', 'Iran', 'Japan', 'Mexico', 'Netherlands', 'Pakistan',
   'Romania', 'Russia', 'Slovakia', 'Slovenia', 'South Africa', 'South Korea', 'Spain', 'Sweden', 'Switzerland', 'Taiwan',
   'Turkey', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States of America'],
+
   top20InWheatProduction: ['China', 'India', 'Russia', 'United States of America', 'France', 'Canada', 'Germany', 'Australia',
   'Pakistan', 'Argentina', 'Ukraine', 'Turkey', 'Kazakhstan', 'United Kingdom', 'Poland', 'Brazil', 'Iran', 'Egypt',
   'Romania', 'Ethiopia'],
   top20InOilProduction: ['United States of America', 'Saudi Arabia', 'Russia', 'Canada', 'China', 'Iraq', 'Iran',
   'United Arab Emirates', 'Brazil', 'Kuwait', 'Mexico', 'Kazakhstan', 'Nigeria', 'Norway', 'Qatar', 'Libya',
   'Angola', 'Algeria', 'Oman', 'Venezuela'],
+  top20InRenewableEnergyProduction: ['China', 'United States of America', 'Brazil', 'Canada', 'India', 'Germany', 'Russia',
+  'Japan', 'Norway', 'Spain', 'France', 'United Kingdom', 'Turkey', 'Italy', 'Sweden', 'Vietnam', 'Mexico', 'Australia',
+  'Colombia', 'Venezuela'],
+  // -------------------------------------------------------------------------------------------------------------------
+  // --------------------------------------------------Economic---------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
 
   // -------------------------------------------------------------------------------------------------------------------
   // -----------------------------------------------------Name----------------------------------------------------------

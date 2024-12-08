@@ -19,13 +19,32 @@ export const prompts = {
   touchesEquator: 'Touches the Equator',
   touchesSaharaDesert: 'Touches the Sahara Desert',
 
-  // Economic
-  humanDevelopmentIndex: 'Human Development Index',
-  gdpPerCapita: 'GDP per capita',
+  // -------------------------------------------------------------------------------------------------------------------
+  // --------------------------------------------------Economic---------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
+  humanDevelopmentIndexOver95: 'Human Development Index Over 0.95',
+  humanDevelopmentIndexOver90: 'Human Development Index Over 0.90',
+
+  humanDevelopmentIndexUnder45: 'Human Development Index Under 0.45',
+  humanDevelopmentIndexUnder40: 'Human Development Index Under 0.40',
+
+  // Font: https://www.cia.gov/the-world-factbook/field/real-gdp-per-capita/country-comparison/
+  gdpPerCapitaOver90K: 'GDP per Capita Over $90k',
+  gdpPerCapitaOver75K: 'GDP per Capita Over $75k',
+  gdpPerCapitaOver65K: 'GDP per Capita Over $65k',
+
+  gdpPerCapitaUnder7K: 'GDP per Capita Under $7k',
+  gdpPerCapitaUnder5K: 'GDP per Capita Under $5k',
+  gdpPerCapitaUnder3K: 'GDP per Capita Under $3k',
+
   producesNuclearPower: 'Produces nuclear power',
+
   top20InWheatProduction: 'Top 20 in wheat production',
   top20InOilProduction: 'Top 20 in oil production',
   top20InRenewableEnergyProduction: 'Top 20 in renewable energy production',
+  // -------------------------------------------------------------------------------------------------------------------
+  // --------------------------------------------------Economic---------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
 
   // -------------------------------------------------------------------------------------------------------------------
   // -----------------------------------------------------Name----------------------------------------------------------
