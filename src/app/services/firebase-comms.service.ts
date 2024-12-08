@@ -1,84 +1,87 @@
 import { Injectable } from '@angular/core';
-import { ref, set, onValue } from 'firebase/database';
+import { ref, set, update } from 'firebase/database';
 import { db } from '../firebaseConfig';
 import { countries } from '../data/countries';
+import { promptData } from '../data/promptData';
 
 interface Country {
-  id: string;
   name: string;
-  flagUrl?: string;
-  continent?: string;
+  flagUrl: string;
+  continent: string;
+  islandNation?: boolean;
+  HDIndex?: number;
+  GDPPerCapita?: number;
+  size?: number;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class FirebaseCommsService {
-  logCountries(): void {
+
+  createCountries(): void {
     const countriesRef = ref(db, 'countries');
 
-    onValue(countriesRef, (snapshot) => {
-      const countriesData = snapshot.val() as Record<string, Country>;
+    let counter = 1;
+    const countriesToAdd: Record<string, Country> = {};
 
-      if (countriesData) {
-        // Group countries by continent
-        const continentsMap: Record<string, Country[]> = {};
+    countries.forEach((country) => {
+      countriesToAdd[counter.toString()] = {
+        name: country.name,
+        flagUrl: country.flagUrl,
+        continent: '',
+        islandNation: false,
+        HDIndex: 0,
+        GDPPerCapita: 0,
+        size: 0
+      };
 
-        Object.values(countriesData).forEach((country) => {
-          if (country.continent) {
-            if (!continentsMap[country.continent]) {
-              continentsMap[country.continent] = [];
-            }
-            continentsMap[country.continent].push(country);
-          }
-        });
+      counter++;
+    });
 
-        let southAmerica = '';
-        let africa = '';
-        let europe = '';
-        let asia = '';
-        let oceania = '';
-        let northAmerica = '';
+    set(countriesRef, countriesToAdd)
+      .then(() => {
+        console.log('Countries have been successfully added to Firebase!');
+      })
+      .catch((error) => {
+        console.error('Error adding countries:', error);
+      });
+  }
 
-        // Print countries grouped by continent
-        console.log('Countries grouped by continent:');
-        Object.entries(continentsMap).forEach(([continent, countries]) => {
-          countries.forEach((country) => {
-            const countryName = `'${country.name}'`;
-            switch (continent) {
-              case 'South America':
-                southAmerica += `${countryName}, `;
-                break;
-              case 'Africa':
-                africa += `${countryName}, `;
-                break;
-              case 'Europe':
-                europe += `${countryName}, `;
-                break;
-              case 'Asia':
-                asia += `${countryName}, `;
-                break;
-              case 'Oceania':
-                oceania += `${countryName}, `;
-                break;
-              case 'North America':
-                northAmerica += `${countryName}, `;
-                break;
-            }
-          });
-        });
+  updateContinents(): void {
+    countries.forEach((country) => {
+      let continent: string | undefined;
 
-        // Print all continent strings
-        console.log('South America:', southAmerica);
-        console.log('Africa:', africa);
-        console.log('Europe:', europe);
-        console.log('Asia:', asia);
-        console.log('Oceania:', oceania);
-        console.log('North America:', northAmerica);
-
-      } else {
-        console.log('No data found in countries node.');
+      if (promptData['inNorthAmerica'].includes(country.name)) {
+        continent = 'North America';
+      } else if (promptData['inSouthAmerica'].includes(country.name)) {
+        continent = 'South America';
+      } else if (promptData['inEurope'].includes(country.name)) {
+        continent = 'Europe';
+      } else if (promptData['inAfrica'].includes(country.name)) {
+        continent = 'Africa';
+      } else if (promptData['inAsia'].includes(country.name)) {
+        continent = 'Asia';
+      } else if (promptData['inOceania'].includes(country.name)) {
+        continent = 'Oceania';
       }
+
+      if (continent) {
+        const countryRef = ref(db, `countries/${country.id}`);
+        update(countryRef, {
+          continent: continent
+        }).then(() => {
+          console.log(`Updated ${country.name} to continent ${continent}`);
+        }).catch((error) => {
+          console.error(`Error updating ${country.name}:`, error);
+        });
+      }
+    });
+  }
+
+  logCountries(): void {
+    countries.forEach((country) => {
+      console.log(`'${country.name}', `);
     });
   }
 }

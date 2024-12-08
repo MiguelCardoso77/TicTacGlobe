@@ -11,12 +11,36 @@ export const promptData: { [key: string]: string[] } = {
   'Mexico', 'Moldova', 'Montenegro', 'Serbia', 'United States Virgin Islands', 'Zambia', 'Andorra', 'Croatia',
   'Falkland Islands', 'Jersey', 'Paraguay', 'Spain', 'Sri Lanka', 'Anguilla'],
 
-  // Geography
+
+  // -------------------------------------------------------------------------------------------------------------------
+  // -------------------------------------------------Geography---------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
+  islandNation: ['Åland', 'American Samoa', 'Anguilla', 'Antigua and Barbuda', 'Aruba', 'Australia', 'Bahamas', 'Bahrain','Barbados',
+  'Bermuda', 'Bouvet Island', 'British Indian Ocean Territory', 'British Virgin Islands', 'Cabo Verde', 'Caribbean Netherlands',
+  'Cayman Islands', 'Christmas Island', 'Cocos Islands', 'Comoros', 'Cook Islands', 'Cuba', 'Curacao', 'Cyprus', 'Dominica',
+  'Falkland Islands', 'Faroe Islands', 'Federated States of Micronesia', 'Fiji', 'French Polynesia', 'French Southern Territories',
+  'Greenland', 'Grenada', 'Guadeloupe', 'Guam', 'Guernsey', 'Heard Island and McDonald Islands', 'Iceland', 'Isle of Man',
+  'Jamaica', 'Japan','Jersey', 'Kiribati', 'Madagascar', 'Maldives', 'Malta', 'Martinique', 'Marshall Islands', 'Mauritius', 'Mayotte',
+  'Montserrat', 'Nauru', 'New Caledonia', 'New Zealand', 'Niue', 'Norfolk Island', 'Northern Mariana Islands', 'Palau',
+  'Philippines', 'Pitcairn Islands', 'Puerto Rico', 'Réunion', 'Saint Barthelemy', 'Saint Helena, Ascension and Tristan da Cunha',
+  'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Martin', 'Saint Pierre and Miquelon', 'Saint Vincent and the Grenadines',
+  'Samoa', 'São Tomé and Príncipe', 'Seychelles', 'Singapore', 'Sint Maarten', 'Solomon Islands', 'South Georgia and the South Sandwich Islands',
+  'Sri Lanka', 'Svalbard and Jan Mayen', 'Taiwan', 'Tokelau', 'Tonga', 'Trinidad and Tobago', 'Turks and Caicos Islands',
+  'Tuvalu', 'United States Virgin Islands', 'Vanuatu', 'Wallis and Futuna'],
   landlocked: ['Afghanistan', 'Andorra', 'Armenia', 'Austria', 'Azerbaijan', 'Belarus', 'Bhutan', 'Bolivia', 'Botswana',
   'Burkina Faso', 'Burundi', 'Central African Republic', 'Chad', 'Czech Republic', 'Eswatini', 'Ethiopia', 'Hungary',
   'Kazakhstan', 'Kosovo','Kyrgyzstan', 'Laos', 'Lesotho', 'Liechtenstein', 'Luxembourg', 'Malawi', 'Mali', 'Moldova',
   'Mongolia', 'Nepal', 'Niger', 'North Macedonia', 'Paraguay', 'Rwanda', 'San Marino', 'Serbia', 'Slovakia', 'South Sudan',
   'Switzerland', 'Tajikistan', 'Turkmenistan', 'Uganda', 'Uzbekistan', 'Vatican City', 'Zambia', 'Zimbabwe'],
+
+  top20CoastlineLength: ['Canada', 'Norway', 'Indonesia', 'Greenland', 'Russia', 'Philippines', 'Japan', 'Australia',
+  'United States of America', 'New Zealand', 'China', 'Greece', 'United Kingdom', 'Mexico', 'Italy', 'Brazil', 'Denmark',
+  'Turkey', 'India', 'Chile'],
+
+  nileRiverRunsThrough: ['Egypt', 'Sudan', 'South Sudan', 'Uganda', 'Ethiopia'],
+  amazonRiverRunsThrough: ['Brazil', 'Peru', 'Bolivia', 'Colombia', 'Ecuador', 'Venezuela', 'Guyana'],
+  danubeRiverRunsThrough: ['Germany', 'Austria', 'Slovakia', 'Hungary', 'Croatia', 'Serbia', 'Bulgaria', 'Romania', 'Moldova',
+  'Ukraine'],
 
   inNorthAmerica: ['Anguilla', 'Antigua and Barbuda', 'Bahamas', 'Barbados', 'Belize', 'Bermuda', 'British Virgin Islands',
   'Canada', 'Caribbean Netherlands', 'Cayman Islands', 'Costa Rica', 'Cuba', 'Dominica', 'Dominican Republic', 'El Salvador',
@@ -56,6 +80,9 @@ export const promptData: { [key: string]: string[] } = {
   'Kenya', 'Somalia', 'Indonesia', 'Ecuador', 'Colombia', 'Brazil'],
   touchesSaharaDesert: ['Algeria', 'Chad', 'Egypt', 'Libya', 'Mali', 'Mauritania', 'Niger', 'Western Sahara', 'Sudan',
   'Morocco', 'Tunisia'],
+  // -------------------------------------------------------------------------------------------------------------------
+  // -------------------------------------------------Geography---------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
 
   // -------------------------------------------------------------------------------------------------------------------
   // --------------------------------------------------Economic---------------------------------------------------------

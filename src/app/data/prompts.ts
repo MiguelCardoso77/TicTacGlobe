@@ -8,12 +8,17 @@ export const prompts = {
   flagHasAnimal: 'Flag has an animal',
   flagWithOnlyNColors: 'Flag with only # colors',
 
-  // Geography
+  // -------------------------------------------------------------------------------------------------------------------
+  // -------------------------------------------------Geography---------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
   islandNation: 'Island nation',
   landlocked: 'Landlocked',
-  coastlineLength: 'Coastline length',
-  coastlineOnX: 'Coastline on X',
-  xRiverRunsThrough: 'X River runs through',
+
+  top20CoastlineLength: 'Top 20 Coastline length',
+
+  nileRiverRunsThrough: 'Nile River runs through',
+  amazonRiverRunsThrough: 'Amazon River runs through',
+  danubeRiverRunsThrough: 'Danube River runs through',
 
   inNorthAmerica: 'In North America',
   inSouthAmerica: 'In South America',
@@ -25,6 +30,9 @@ export const prompts = {
   touchesEurasianSteppe: 'Touches the Eurasian Steppe',
   touchesEquator: 'Touches the Equator',
   touchesSaharaDesert: 'Touches the Sahara Desert',
+  // -------------------------------------------------------------------------------------------------------------------
+  // -------------------------------------------------Geography---------------------------------------------------------
+  // -------------------------------------------------------------------------------------------------------------------
 
   // -------------------------------------------------------------------------------------------------------------------
   // --------------------------------------------------Economic---------------------------------------------------------
