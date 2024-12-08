@@ -1,16 +1,16 @@
 import { prompts } from '../../data/prompts';
 
 export class GameStarter {
-  private readonly allPrompts = Object.keys(prompts);
+  private readonly allPrompts = Object.values(prompts);
 
-  private getRandomPrompts(count: number): string[] {
-    const prompts = [...this.allPrompts];
+  private getRandomPrompts(count: number, exclude: string[] = []): string[] {
+    const availablePrompts = this.allPrompts.filter(prompt => !exclude.includes(prompt));
     const selected: string[] = [];
 
-    while (selected.length < count && prompts.length > 0) {
-      const randomIndex = Math.floor(Math.random() * prompts.length);
-      selected.push(prompts[randomIndex]);
-      prompts.splice(randomIndex, 1);
+    while (selected.length < count && availablePrompts.length > 0) {
+      const randomIndex = Math.floor(Math.random() * availablePrompts.length);
+      selected.push(availablePrompts[randomIndex]);
+      availablePrompts.splice(randomIndex, 1);
     }
 
     return selected;
